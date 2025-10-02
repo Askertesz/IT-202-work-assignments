@@ -9,12 +9,18 @@ div{
 }
 #box_2{
     background-color: navy;
-    border: 10px solid black;
-    border-width: 20px 10px 20px 10px;
+    /*
+    
+    border-bottom: 20px dotted orange;
+    border-top: 20px dotted orange;
+    */
+    border: 10px dotted orange;
+    border-width: 20px 10px;
+    
 }
 #box_3{
     background-color: forestgreen;
-    border: 10px;
+    border: 10px solid yellow;
 }
 p{
     margin: 0;
