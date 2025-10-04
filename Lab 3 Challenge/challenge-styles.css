@@ -1,0 +1,23 @@
+div{
+    height: 300px;
+    width: 300px;
+}
+.top-container{
+    background-color: navy;
+    border: 10px solid black;
+    /* 320 px wide and tall*/
+}
+.middle-container{
+    background-color: maroon;
+    border: 20px solid black;
+    padding: 20px;
+     /* 380 px wide and tall*/
+    margin-left: 320px;
+    background-image: url('images/duck.gif');
+}
+.bottom-container{
+    background-color: forestgreen;
+    border: 10px solid black;
+     /* 320 px wide and tall*/
+     margin-left: 700px;
+}

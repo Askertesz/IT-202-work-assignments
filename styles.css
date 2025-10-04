@@ -1,0 +1,35 @@
+div{
+        height: 200px;
+        width: 200px;
+}
+#box_1{
+    background-color: maroon;
+    padding: 20px;
+    border: 10px solid black;
+    /* 260px*/
+}
+#box_2{
+    background-color: navy;
+    /*
+    
+    border-bottom: 20px dotted orange;
+    border-top: 20px dotted orange;
+    */
+    border: 10px dotted orange;
+    border-width: 20px 10px;
+
+    /*220 by 240*/
+
+    margin-left: 260px;
+    
+}
+#box_3{
+    background-color: forestgreen;
+    border: 10px solid yellow;
+    /*220px*/
+    margin-left: 480px ;
+}
+p{
+    margin: 0;
+}
+/* 9. Set the margins for the divs so that each box's corner touches the other.*/
