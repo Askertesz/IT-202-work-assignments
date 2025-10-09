@@ -1,0 +1,26 @@
+*{
+    background-color: midnightblue;
+    color: antiquewhite;
+    text-align: center;
+    
+}
+#Splash_Page{
+    background-image: url(images/tech-18050.gif);
+    height: 500px;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 100%;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1, h2, #Splash_Page{
+    background-color: transparent;
+    
+}
+
