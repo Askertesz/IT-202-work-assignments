@@ -4,13 +4,14 @@
     text-align: center;
     
 }
+/* try to change all units to vw or another dynamic or relative unit*/
 #Splash_Page{
     background-image: url(images/tech-18050.gif);
     height: 500px;
     text-align: center;
     padding-top: 20px;
     max-width: 100%;
-    height: 40vw;
+    height: 50vw;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -23,4 +24,59 @@ h1, h2, #Splash_Page{
     background-color: transparent;
     
 }
+
+.school{
+    display: flex;
+    border: 2px solid greenyellow;
+    flex-direction: row;
+    
+}
+.dates{
+    border: 2px solid red;
+    justify-content: right;
+}
+.topInfo{
+    border: 2px solid mediumseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.college{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 20px;
+    
+
+}
+.bottomInfo{
+    border: solid red;
+    background-color: magenta;
+}
+
+ #Education{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    
+}
+#Education{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.topInfo, .bottomInfo, .school, .dates{
+    background-color: transparent;
+}
+#Education *{
+    background-color: maroon;
+    border-radius: 15px;
+}
+.dates *{
+    background-color: transparent;
+}
+ 
 
