@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Add a favicon for page-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
 </head>
+
 <body>
     <ul id="navbar">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Education</li>
+        <li><a href="#Splash_Page">Home</a></li>
+        <li><a href="#Profile">About Me</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#awds">Awards</a></li>
+        <li><a href="#Work">Work Experience</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Interests">Interests and Hobbies</a></li>
 
     </ul>
     <div id="Splash_Page">
-    <H1>Andrew Kertesz</H1>
-    <!--Maybe put a cool animation in this section as a background
+        <H1>Andrew Kertesz</H1>
+        <!--Maybe put a cool animation in this section as a background
     dhiru 6801 pixelbay-->
-    <br>
-    <h2>Student In Need Of Internship</h2>
+        <br>
+        <h2>Student In Need Of Internship</h2>
     </div>
-    <h3>What I've been up to:</h3>
-    <!--Add a headshot here?-->
-    <!--If able to include more info consider adding navbar-->
-    <p>Student studying IT at NJIT: <br>I Graduated from The County College of Morris in May 2024 with an associates degree in Information Technology, and spent another year at my part time position at an MSP startup called <strong>Navatechs</strong>. After realizing that the growth of the company would not be compatable with me holding a full time position there, I continued my education at NJIT studying Information Technology in September 2025.</p>
+    <div id="pic">
+        <div id="picture">
+            <img src="./images/profile photo.jpg" alt="A Picture of Andrew Kertesz not smiling or anything">
+        </div>
+    </div>
+    <div id="Profile">
+        <h3 id="About Me">What I've been up to:</h3>
+        <!--Add a headshot here?-->
+        <!--If able to include more info consider adding navbar-->
+        <p>Student studying IT at NJIT: <br>I Graduated from The County College of Morris in May 2024 with an associates
+            degree in Information Technology, and spent another year at my part time position at an MSP startup called
+            Navatechs. After realizing that the growth of the company would not be compatable with me holding a full
+            time position there, I continued my education at NJIT studying Information Technology in September 2025.</p>
+    </div>
     <h3>Education</h3>
     <!--Try and group each degree into its own box and format them all the same-->
     <div id="Education">
-    <div class="college"><div class="topInfo"><h4 class="school">New Jersey Institute of Technology, Newark NJ, USA</h4><p class="dates">September 2025- present</p></div><p class="bottomInfo">Bachelor's Degree in Information Technology</p></div>
-    <div class="college"><div class="topInfo"><h4 class="school">County College of Morris, Randolph NJ, USA</h4><p class="dates">Graduated May 2024 <em>magna cum laude</em></p></div><p class="bottomInfo">Associates Degree in Information Technology</p></div>
-    <div class="college"><div class="topInfo"><h4 class="school">County College of Morris, Randolph NJ, USA</h4><p class="dates">Graduated May 2019 <em>summa cum laude</em></p></div><p class="bottomInfo">Associates Degree in Game Design and Development</p></div>
+        <div class="college">
+            <div class="topInfo">
+                <h4 class="school">New Jersey Institute of Technology, Newark NJ, USA</h4>
+                <p class="dates">September 2025- present</p>
+            </div>
+            <p class="bottomInfo">Bachelor's Degree in Information Technology</p>
+        </div>
+        <div class="college">
+            <div class="topInfo">
+                <h4 class="school">County College of Morris, Randolph NJ, USA</h4>
+                <p class="dates">Graduated May 2024 <em>magna cum laude</em></p>
+            </div>
+            <p class="bottomInfo">Associates Degree in Information Technology</p>
+        </div>
+        <div class="college">
+            <div class="topInfo">
+                <h4 class="school">County College of Morris, Randolph NJ, USA</h4>
+                <p class="dates">Graduated May 2019 <em>summa cum laude</em></p>
+            </div>
+            <p class="bottomInfo">Associates Degree in Game Design and Development</p>
+        </div>
     </div>
+    <h3 id="awds">Awards</h3>
     <div id="Awards">
-        <h3>Awards</h3>
+
+        <ul>
+            <li>Inducted into the Phi Theta Kappa Honors Society of Two-Year Schools: May 2018</li>
+            <li>Selected for Seeing Eye Puppy Raiser Scholarship June 2017</li>
+        </ul>
     </div>
+    <h3>Work Experience</h3>
     <div id="Work">
-        <h3>Work Experience</h3>
-        <p>Navatechs: Technician</p>
+
+        <h4>Navatechs: Technician</h4>
         <ul>
             <li>provided remote and on-site technical support for multiple clients</li>
             <li>Performed manual software patches, hardware servicing and software troubleshooting</li>
@@ -45,6 +93,7 @@
             <li>Used Atera ticketing system to track service and troubleshooting requests and service outcomes</li>
         </ul>
     </div>
+    <h3>Skills</h3>
     <div id="Skills">
         <ul>
             <li>Python</li>
@@ -61,25 +110,26 @@
         </ul>
 
     </div>
-    <div>
-        <h3>Interests & Hobbies</h3>
+    <h3>Interests & Hobbies</h3>
+    <div id="Interests">
+
         <ul>
             <li>Gaming</li>
             <li>3D Printing</li>
             <li>3D Modeling & Animation</li>
             <li>Dogs</li>
             <li>PC Building</li>
+            <li>Skiing</li>
             <li>Virtual Reality</li>
             <li>Tech in General</li>
             <li>Physical Security</li>
             <li>CyberSecurity</li>
             <li>Stationary</li>
-
         </ul>
         <!--try to also include an email section (contact me ) probably a form, but should be simple-->
     </div>
     <a href="https://flyingmacintosh.itch.io/">My old Itch.io page</a>
-    
+    <footer>© Andrew Kertesz 2025 <br> animated background image from dhiru 6801 on pixelbay</footer>
 </body>
-<footer>Andrew Kertesz dhiru 6801 from pixelbay for animated background</footer>
+
 </html>
