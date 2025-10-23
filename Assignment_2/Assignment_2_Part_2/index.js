@@ -4,7 +4,7 @@ function numericPalindromeDetector() {
     const reversed = userInput.split('').reverse().join('');
 
     if (reversed == userInput) {
-        document.getElementById('output').innerText = 'Congradulations! ' + userInput + ' is a palindrome!';
+        document.getElementById('output').innerText = 'Congratulations! ' + userInput + ' is a palindrome!';
     }
     else {
         document.getElementById('output').innerText = 'Sorry, ' + userInput + ' is not a palindrome';
