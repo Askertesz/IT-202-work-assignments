@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS Lab</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="httpService.js"></script>
+    <script src="index.js"></script>
+</head>
+
+
+<h1>Backend Test</h1>
+
+<body>
+    <form id="vowelCountForm">
+        <input type="file" id="fileInput" accept=".txt, text/plain">
+        <button id="submissionButton" onclick="VandCCount()">Read File</button>
+    </form>
+
+    <p id="contentDisplay"></p>
+
+    <form id="BMIForm">
+        <input type="number" id="weight" placeholder="weight in lbs">
+        <input type="number" id="heightFt" placeholder="height in feet">
+        <input type="number" id="heightIn" placeholder="remaining inches for height">
+        <button id="submitBMI" onclick="BMICalc()">Calculate BMI</button>
+    </form>
+    <p id="BMIDisplay"></p>
+
+</body>
+
+</html>
