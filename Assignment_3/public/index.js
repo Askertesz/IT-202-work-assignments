@@ -3,9 +3,7 @@ function VandCCount() {
 
   $('#vowelCountForm').on('submit', function (e) {
     e.preventDefault();
-    const fileInput = document.getElementById('fileInput');
-    const submissionButton = document.getElementById('submissionButton');
-    const contentDisplay = document.getElementById('contentDisplay');
+
     let fileContent = 'testing';
     const reader = new FileReader();
 
