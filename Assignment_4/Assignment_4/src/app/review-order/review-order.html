@@ -1,1 +1,37 @@
-<p>review-order works!</p>
+
+
+<!-- review-order.html -->
+
+<div class="container mt-5">
+  <h2>Review Your Order</h2>
+
+  <!-- Display confirmation message if order is confirmed -->
+  <div *ngIf="orderConfirmed" class="alert alert-success" role="alert">
+    <strong>Success!</strong> {{ confirmationMessage }}
+    <hr>
+    <a routerLink="/" class="btn btn-primary">Continue Shopping</a>
+  </div>
+
+  <!-- Display the order card if the order is NOT yet confirmed -->
+  <div *ngIf="!orderConfirmed && selectedItem" class="card mx-auto" style="max-width: 500px;">
+    
+    <img [src]="selectedItem.image" class="card-img-top" [alt]="selectedItem.name">
+    <div class="card-body">
+      <h5 class="card-title">{{ selectedItem.name }}</h5>
+      <p class="card-text">{{ selectedItem.description }}</p>
+      <p class="card-text"><strong>Price:</strong> ${{ selectedItem.price }}</p>
+      
+      <!-- The final submit button -->
+      <button class="btn btn-success" (click)="submitOrder()">
+        Submit Order
+      </button>
+      <a routerLink="/" class="btn btn-secondary ms-2">Cancel Order</a>
+    </div>
+  </div>
+
+  <!-- This loading message handles the very brief moment before the Resolver loads data -->
+  <div *ngIf="!selectedItem && !orderConfirmed" class="alert alert-info">
+    Loading order details...
+  </div>
+</div>
+
