@@ -18,10 +18,7 @@ import { ItemService } from './item';
     <app-header />
     <main>
       <router-outlet />
-      <!-- Example usage to display items fetched by your methods -->
-      <ul>
-        <li *ngFor="let item of items">{{ item.name }}</li>
-      </ul>
+      
     </main>
   `,
   styleUrl: './app.css'
